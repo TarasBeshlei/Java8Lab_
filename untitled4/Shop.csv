@@ -1,0 +1,9 @@
+name, brand, amount, price
+TestRodName,TestBrand,32,123.0
+Boer,BoerBrand,22,163.0
+Coil,CoilBrand,39,90.0
+Float,FloatBrand,100,5.0
+Hook,HookBrand,200,7.0
+AutumnRod,RodBrand,12,350.0
+WinterRod,RodBrand,23,400.0
+SpringRod,RodBrand,24,250.0
