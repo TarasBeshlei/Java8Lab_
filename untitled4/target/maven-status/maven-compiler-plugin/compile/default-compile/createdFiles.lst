@@ -1,3 +1,4 @@
+ua/lviv/iot/JaxRsConfig.class
 ua/lviv/iot/item/equipment/Float.class
 ua/lviv/iot/item/equipment/Hook.class
 ua/lviv/iot/item/equipment/Boer.class
@@ -8,7 +9,7 @@ ua/lviv/iot/item/rod/WinterRod.class
 ua/lviv/iot/FishingShop.class
 ua/lviv/iot/item/rod/AutumnRod.class
 ua/lviv/iot/Main.class
-ua/lviv/iot/ShopServise.class
+ua/lviv/iot/ItemServise.class
 ua/lviv/iot/item/writer/ShopWriter.class
 ua/lviv/iot/item/ShopItem.class
 ua/lviv/iot/item/rod/SummerRod.class

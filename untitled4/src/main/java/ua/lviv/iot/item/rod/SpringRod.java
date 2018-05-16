@@ -12,7 +12,7 @@ public class SpringRod extends ShopItem {
             final int amount, final int price) {
         super(name, brand, amount, price);
     }
-    public FishingType getFishingtype() {
+    public FishingType getFishingType() {
         return fishingtype;
     }
 

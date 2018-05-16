@@ -24,21 +24,21 @@ public class Main {
 
         FishingShop equipment = new FishingShop();
 
-        equipment.addGoods(new AutumnRod("Autumn Rod", "Fisher", 2, 20));
-        equipment.addGoods(new SpringRod("Spring Rod", "Hunter", 14, 80));
-        equipment.addGoods(new SummerRod("Summer Rod", "Acropolis", 11, 40));
-        equipment.addGoods(new WinterRod("Winter Rod", "Fisher", 20, 50));
-        equipment.addGoods(new Hook("Hook", "Hunter", 70, 10));
-        equipment.addGoods(new Boer("Boer", "Acropolis", 10, 100));
-        equipment.addGoods(new Coil("Coil", "Hunter", 40, 80));
-        equipment.addGoods(new Float("Float", "Fisher", 100, 12));
-
-        printList(equipment.getGoodList());
-        printList(equipment.sortByPrice(equipment.getGoodList()));
-
-        System.out.println("\nList of searched goods:\n");
-        List<ShopItem> result = equipment.findByGroup(FishingType.SUMMER);
-        printList(result);
+        equipment.addGoods(new AutumnRod("Autumn Rod", "Fisher", 2, 20), 23);
+//        equipment.addGoods(new SpringRod("Spring Rod", "Hunter", 14, 80));
+//        equipment.addGoods(new SummerRod("Summer Rod", "Acropolis", 11, 40));
+//        equipment.addGoods(new WinterRod("Winter Rod", "Fisher", 20, 50));
+//        equipment.addGoods(new Hook("Hook", "Hunter", 70, 10));
+//        equipment.addGoods(new Boer("Boer", "Acropolis", 10, 100));
+//        equipment.addGoods(new Coil("Coil", "Hunter", 40, 80));
+//        equipment.addGoods(new Float("Float", "Fisher", 100, 12));
+//
+//        printList(equipment.getGoodList());
+//        printList(equipment.sortByPrice(equipment.getGoodList()));
+//
+//        System.out.println("\nList of searched goods:\n");
+//        List<ShopItem> result = equipment.findByGroup(FishingType.SUMMER);
+//        printList(result);
 
 
 

@@ -11,7 +11,7 @@ public class SummerRodTest {
     @Test
     public void testGetFishingtype() throws Exception {
         assertEquals(new SummerRod("Summer Rod", "Acropolis", 11, 40)
-                        .getFishingtype().toString(),
+                        .getFishingType().toString(),
                 SUMMER.toString());
     }
 }

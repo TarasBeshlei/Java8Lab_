@@ -14,7 +14,7 @@ public class SummerRod extends ShopItem {
         super(name, brand, amount, price);
 
 }
-    public FishingType getFishingtype() {
+    public FishingType getFishingType() {
         return fishingtype;
     }
 

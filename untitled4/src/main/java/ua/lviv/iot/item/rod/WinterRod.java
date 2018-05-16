@@ -11,7 +11,7 @@ public class WinterRod  extends ShopItem {
     public WinterRod(final String name, final String brand, final int amount, final int price) {
         super(name, brand, amount, price);
     }
-    public FishingType getFishingtype() {
+    public FishingType getFishingType() {
         return fishingtype;
     }
 

@@ -10,7 +10,7 @@ public class HookTest {
     @Test
     public void testGetFishingtype() throws Exception {
         assertEquals(new Hook("Float", "Fisher", 100, 12)
-                        .getFishingtype().toString(),
+                        .getFishingType().toString(),
                 AUTUMN.toString());
     }
 

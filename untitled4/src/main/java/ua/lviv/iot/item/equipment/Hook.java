@@ -13,7 +13,7 @@ public class Hook extends ShopItem {
 
     }
 
-    public FishingType getFishingtype() {
+    public FishingType getFishingType() {
         return fishingtype;
     }
 

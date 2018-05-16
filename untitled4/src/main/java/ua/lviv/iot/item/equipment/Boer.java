@@ -8,7 +8,7 @@ public class Boer extends ShopItem {
 
 
     private final FishingType fishingtype = FishingType.WINTER;
-    private int id;
+
 
 
     public Boer(final String name, final String brand,
@@ -22,15 +22,9 @@ public class Boer extends ShopItem {
 
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
 
-    public Integer getId() {
-        return id;
-    }
 
-    public FishingType getFishingtype() {
+    public FishingType getFishingType() {
         return fishingtype;
     }
 

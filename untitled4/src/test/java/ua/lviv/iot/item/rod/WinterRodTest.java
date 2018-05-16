@@ -9,7 +9,7 @@ public class WinterRodTest {
     @Test
     public void testGetFishingtype() throws Exception {
         assertEquals(new WinterRod("Winter Rod", "Fisher", 20, 50)
-                        .getFishingtype().toString(),
+                        .getFishingType().toString(),
                 SUMMER.toString());
     }
 

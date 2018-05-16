@@ -2,52 +2,67 @@ package ua.lviv.iot;
 
 import ua.lviv.iot.item.ShopItem;
 
-import java.util.Comparator;
-import java.util.LinkedList;
-import java.util.List;
-
-
+import java.util.*;
 
 
 public final class FishingShop {
 
 
 
-    private List<ShopItem> goodList = new LinkedList<>();
+    private static Map<Integer, ShopItem> shopItemMap = new HashMap<>();
 
 
     public FishingShop() {
     }
 
 
-    public List<ShopItem> sortByPrice(final List<ShopItem> result) {
-        result.sort(Comparator.comparing(ShopItem::getPrice));
-        return result;
-    }
+//    public List<ShopItem> sortByPrice(final List<ShopItem> result) {
+//        result.sort(Comparator.comparing(ShopItem::getPrice));
+//        return result;
+//    }
 
-    public List<ShopItem> findByGroup(final FishingType goodsType) {
-        List<ShopItem> result = new LinkedList<>();
-        goodList.stream().filter((goodList) ->
-                ((goodList.getFishingtype() == goodsType
-                ))).forEachOrdered((goodList) -> {
-            result.add(goodList);
-        });
-        return result;
-    }
 
-    public List<ShopItem> getGoodList() {
-        return goodList;
-    }
+    public Map<Integer, ShopItem> sortByPrice(int price) {
+        Map<Integer, ShopItem> itemList = new HashMap<>();
+        for (Map.Entry<Integer,ShopItem> fishingItem: shopItemMap.entrySet()) {
 
-    public void setGoodList(final List<ShopItem> goodList) {
-        this.goodList = goodList;
-    }
+                itemList.put(fishingItem.getKey(), fishingItem.getValue());
 
-    public void addGoods(final ShopItem goods) {
-        this.goodList.add(goods);
+        }
+        return itemList;
     }
 
 
+
+//    public List<ShopItem> findByGroup(final FishingType goodsType) {
+//        List<ShopItem> result = new LinkedList<>();
+//        goodList.stream().filter((goodList) ->
+//                ((goodList.getFishingType() == goodsType
+//                ))).forEachOrdered((goodList) -> {
+//            result.add(goodList);
+//        });
+//        return result;
+//    }
+//
+//    public List<ShopItem> getGoodList() {
+//        return goodList;
+//    }
+//
+//    public void setGoodList(final List<ShopItem> goodList) {
+//        this.goodList = goodList;
+//    }
+
+    public void addGoods(final ShopItem goods, Integer id) {
+        this.shopItemMap.put(id, goods);
+    }
+
+    public static Map<Integer, ShopItem> getGoodList() {
+        return shopItemMap;
+    }
+
+    public static void setGoodList(Map<Integer, ShopItem> goodList) {
+        FishingShop.shopItemMap = goodList;
+    }
 }
 
 

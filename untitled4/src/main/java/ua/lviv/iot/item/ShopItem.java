@@ -2,16 +2,22 @@ package ua.lviv.iot.item;
 
 import ua.lviv.iot.FishingType;
 
-public abstract class ShopItem {
 
-
+public class ShopItem {
 
     private String name;
     private String brand;
     private int amount;
     private double price;
+    private Integer id;
 
-    public abstract FishingType getFishingtype();
+    public FishingType getFishingType() {
+        return null;
+    }
+
+    public ShopItem() {
+
+    }
 
     public ShopItem(String name, String brand, int amount, int price) {
         this.name = name;
@@ -32,11 +38,13 @@ public abstract class ShopItem {
         return amount;
     }
 
-    final  public double getPrice() {
+    final public double getPrice() {
         return price;
     }
 
-
+    public void setName(String name) {
+        this.name = name;
+    }
 
     @Override
     public String toString() {
@@ -70,13 +78,19 @@ public abstract class ShopItem {
         return result;
     }
 
-    public String getHeaders(){
+    public String getHeaders() {
         return "name, brand, amount, price";
     }
 
-    public String toCSV(){
+    public String toCSV() {
         return name + "," + brand + "," + amount + "," + price;
     }
 
+    public Integer getId() {
+        return id;
+    }
 
+    public void setId(Integer id) {
+        this.id = id;
+    }
 }

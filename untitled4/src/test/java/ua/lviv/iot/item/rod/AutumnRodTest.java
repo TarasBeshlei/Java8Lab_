@@ -9,7 +9,7 @@ public class AutumnRodTest {
 
     @Test
     public void testGetFishingtype() throws Exception {
-        assertEquals(new AutumnRod("Autumn Rod", "Fisher", 2, 20).getFishingtype()
+        assertEquals(new AutumnRod("Autumn Rod", "Fisher", 2, 20).getFishingType()
                 .toString(), AUTUMN.toString());
     }
 

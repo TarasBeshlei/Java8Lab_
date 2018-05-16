@@ -15,7 +15,7 @@ public class Float extends ShopItem {
 //        this.price = price;
 //        this.amount = amount;
     }
-    public FishingType getFishingtype() {
+    public FishingType getFishingType() {
         return fishingtype;
     }
 
